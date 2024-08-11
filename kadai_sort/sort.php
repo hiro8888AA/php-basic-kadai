@@ -14,20 +14,23 @@
             if($order){
             echo'昇順にソートします。<br>';
             sort($array);
+            foreach ($array as $num) {
+            echo $num . '<br>';
+        }
+
+
         } else {
             echo '降順にソートします。<br>';
             rsort($array);
-        }
-
-        foreach ($array as $num) {
+            foreach ($array as $num) {
             echo $num . '<br>';
+            }
         }
-        echo '<br>';
-        }
+    }
+
         $nums = [15, 4, 18, 23, 10 ];
         
         sort_2way($nums, true);
-        
         sort_2way($nums, false);
         ?>
 　　</p>
