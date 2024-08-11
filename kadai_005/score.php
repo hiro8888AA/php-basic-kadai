@@ -18,11 +18,10 @@
       $score9 = 30;
       $score10 = 60;
      
-      echo $score1+$score2+$score3+$score4+$score5+$score6+$score7+$score8+$score9+$score10;
+      $total_score =   $score1+$score2+$score3+$score4+$score5+$score6+$score7+$score8+$score9+$score10;
      
-      echo '<br>';
-     
-      echo 625 % 10;
+      $score_average = $total_score / 10;
+      echo $score_average;
     
     ?>
  </p>
